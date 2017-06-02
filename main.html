@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html  >
+<head>
+<style>
+*{
+padding:0px;
+margin:0px;
+}
+</style>
+
+</head>
+<body >
+<div id="main" align="center" style="background-color:yellow">
+<br/>
+<ul>
+<li style="display:inline;margin-right:50px"><a href="main.html" style="display:inline;margin-right:50px;font-size:30px">HOME</a></li>
+<li style="display:inline;margin-right:50px"><a href="#about" style="display:inline;margin-right:50px;font-size:30px">ABOUT</a></li>
+<li style="display:inline;margin-right:50px"><a href="#contact" style="display:inline;margin-right:50px;font-size:30px">CONTACT</a></li>
+<li style="display:inline;margin-right:50px"><a href="#select" style="display:inline;margin-right:50px;font-size:30px">SELECT</a></li>
+<br/>
+</div>
+<div id="about" align="center" style="background-color:lightblue">
+<br/>
+<h1>ABOUT US</h1>
+<br/>
+<p>This site provides online learning materials which is useful for developers,students and interns.It mainly focuses on development
+.Each technology will have aroung 3 to 4 materials.</p>
+<br/>
+</div>
+<div id="contact" align="center" style="background-color:yellow">
+<br/>
+<h1>CONTACT US</h1>
+<br/>
+<p>909909090</p><br/>
+<p>sknotes@gmail.com</p><br/>
+</div>
+<div id="select" align="center" style="background-color:lightblue">
+<br/>
+<h1>SELECT YOUR CHOICE</h1><br/>
+<ul>
+<li style="display:inline;margin-right:50px"><a href="c.html" style="display:inline;margin-right:50px;font-size:30px">C</a></li>
+<li style="display:inline;margin-right:50px"><a href="cplus.html" style="display:inline;margin-right:50px;font-size:30px">C++</a></li>
+<li style="display:inline;margin-right:50px"><a href="csharp.html" style="display:inline;margin-right:50px;font-size:30px">C#</a></li>
+</ul>
+
+<ul>
+<li style="display:inline;margin-right:50px"><a href="java.html" style="display:inline;margin-right:50px;font-size:30px">JAVA</a></li>
+<li style="display:inline;margin-right:50px"><a href="ruby.html" style="display:inline;margin-right:50px;font-size:30px">RUBY</a></li>
+<li style="display:inline;margin-right:50px"><a href="python.html" style="display:inline;margin-right:50px;font-size:30px">PYTHON</a></li>
+</ul>
+
+<ul>
+<li style="display:inline;margin-right:50px"><a href="html.html" style="display:inline;margin-right:50px;font-size:30px">HTML</a></li>
+<li style="display:inline;margin-right:50px"><a href="css.html" style="display:inline;margin-right:50px;font-size:30px">CSS</a></li>
+<li style="display:inline;margin-right:50px"><a href="javascript.html" style="display:inline;margin-right:50px;font-size:30px">JAVASCRIPT</a></li>
+</ul>
+
+<ul>
+<li style="display:inline;margin-right:50px"><a href="jquery.html" style="display:inline;margin-right:50px;font-size:30px">JQUERY</a></li>
+<li style="display:inline;margin-right:50px"><a href="rails.html" style="display:inline;margin-right:50px;font-size:30px">RAILS</a></li>
+<li style="display:inline;margin-right:50px"><a href="django.html" style="display:inline;margin-right:50px;font-size:30px">DJANGO</a></li>
+</ul>
+
+<ul>
+<li style="display:inline;margin-right:50px"><a href="angular.html" style="display:inline;margin-right:50px;font-size:30px">ANGULAR JS</a></li>
+<li style="display:inline;margin-right:50px"><a href="node.html" style="display:inline;margin-right:50px;font-size:30px">NODE JS</a></li>
+<li style="display:inline;margin-right:50px"><a href="react.html" style="display:inline;margin-right:50px;font-size:30px">REACT JS</a></li>
+</ul>
+
+<ul>
+<li style="display:inline;margin-right:50px"><a href="php.html" style="display:inline;margin-right:50px;font-size:30px">PHP</a></li>
+<li style="display:inline;margin-right:50px"><a href="xml.html" style="display:inline;margin-right:50px;font-size:30px">XML</a></li>
+<li style="display:inline;margin-right:50px"><a href="xaml.html" style="display:inline;margin-right:50px;font-size:30px">XAML</a></li>
+</ul>
+
+<ul>
+<li style="display:inline;margin-right:50px"><a href="sql.html" style="display:inline;margin-right:50px;font-size:30px">SQL</a></li>
+<li style="display:inline;margin-right:50px"><a href="web.html" style="display:inline;margin-right:50px;font-size:30px">WEB</a></li>
+<li style="display:inline;margin-right:50px"><a href="asp.html" style="display:inline;margin-right:50px;font-size:30px">ASP.NET</a></li>
+</ul>
+<br/>
+ <div ng-app="myapp">
+		<ng-view></ng-view>
+	  </div>
+
+</div>
+<div id="footer" align="center" style="background-color:yellow">
+<br/>
+<p>&copy; COPYRIGHT 2017</p>
+<br/>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+<script>
+var app=angular.module("myapp",['ngRoute']);
+app.config(function($routeProvider){
+$routeProvider.when("/",{templateUrl:"main.html"}).when
+("/c",{templateUrl:"c.html"}).when
+("/cplus",{templateUrl:"cplus.html"}).when
+("/csharp",{templateUrl:"csharp.html"}).when
+("/java",{templateUrl:"java.html"}).when
+("/ruby",{templateUrl:"ruby.html"}).when
+("/python",{templateUrl:"python.html"}).when
+("/html",{templateUrl:"html.html"}).when
+("/css",{templateUrl:"css.html"}).when
+("/javascript",{templateUrl:"javascript.html"}).when
+("/jquery",{templateUrl:"jquery.html"}).when
+("/rails",{templateUrl:"rails.html"}).when
+("/django",{templateUrl:"django.html"}).when
+("/angular",{templateUrl:"angular.html"}).when
+("/node",{templateUrl:"node.html"}).when
+("/react",{templateUrl:"react.html"}).when
+("/php",{templateUrl:"php.html"}).when
+("/xml",{templateUrl:"xml.html"}).when
+("/xaml",{templateUrl:"xaml.html"}).when
+("/sql",{templateUrl:"sql.html"}).when
+("/web",{templateUrl:"web.html"}).when
+("/asp",{templateUrl:"asp.html"});
+});
+</script>
+</body>
+</html>
